@@ -94,11 +94,11 @@ def main():
         pass
     response = get_usr(usr_url, req)
     if 'ssr://' in response.text:
-        print(re.findall('ssr://[\d|\w]+?', response.text))
+        print('\n'.join(re.findall('ssr://[\d|\w]+', response.text)))
     else:
         get_url(get_link_url, 'ssr', req)
     if 'vmess://' in response.text:
-        print(re.findall('vmess://[\d|\w]+?=='))
+        print('\n'.join(re.findall('vmess://[\d|\w]+?==')))
     else:
         get_url(get_link_url, 'v2ray', req)
 
