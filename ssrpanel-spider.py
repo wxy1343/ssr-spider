@@ -63,6 +63,7 @@ def main():
     # url = 'https://jxka.net'
     # code = 'lanmang'
     # url = 'https://d9cloud.pw'
+    # url = 'https://web.zfjc.xyz'
     url = input('请输入机场网址：').strip()
     code = input('请输入邀请码(没有留空)：').strip()
     reg_url = url + '/auth/register'
